@@ -10,6 +10,11 @@
     font-family: 'Rubik', sans-serif;
 }
 
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
 .bvd p{
     padding: .5rem;
     background-color: rosybrown;
@@ -18,7 +23,41 @@
     font-weight: bolder;
 } 
 
+#btn{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    border-radius: .5em;
+    background: rgb(255, 127, 127);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: .4rem 2.5rem;
+}
+
+#btn:hover{
+    background: rgb(252, 84, 84);
+}
+
+.btn2{
+    background-color: rosybrown;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    
+}
+
 header {
+    background: url(https://images.pexels.com/photos/1405762/pexels-photo-1405762.jpeg) bottom center;
+    background-size: cover;
+    width: 100vw;
+    height: 64vh;
+    background-repeat: no-repeat;
     background-color: white;
     box-shadow: 2px black;
 }
@@ -26,6 +65,8 @@ header {
 header h1{
     font-family: 'Agbalumo', sans-serif;
     padding: 1rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px .8px 1px black;
 }
 
 span{
@@ -108,25 +149,63 @@ nav{
     transform: translate(-50%, -50%);
 }
 
-main {
-    /*background: url(../);
-    background-repeat: no-repeat;
-    background-size: 27.5rem;
-    position: relative;
-    top: 40px; left: 40px;*/
-}
-
-main h1{
-    font-size: 2rem;
-    margin-left: 10px;
+#processo{
     padding-top: 2rem;
+    margin-left: 15px;
 }
 
+#processo p{
+    font-size: 1.2rem;
+    text-align: center;
+}
 
+.processo-img img {
+    border-radius: 50%;
+    position: fixed;
+    padding: 2rem;
+    width: 65%;
+}
 
+#clt{
+    background: rgba(188, 143, 143, 0.61);
+    margin-top: 1.7rem;
+    padding: 1.9rem;
+}
 
+#clt p {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: 700;
+}
 
+#card-geral{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
+section.card{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 256px;
+}
+
+section.card:first-child{
+    margin-left: 0;
+}
+
+section.card .icon{
+    width: 500px;
+    height: 78px;
+}
+
+section.card img{
+    width: 100%;
+}
 
 
 
@@ -167,7 +246,6 @@ main h1{
         width: 50vw;
         height: 92vh;
         background: rgb(226, 169, 169);
-
         flex-direction: column;
         justify-content: space-around;
         gap: 0;
