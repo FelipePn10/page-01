@@ -17,7 +17,7 @@ body{
 
 .bvd p{
     padding: .5rem;
-    background-color: rosybrown;
+    background-color: #282827;
     text-align: center;
     color: white;
     font-weight: bolder;
@@ -28,7 +28,7 @@ body{
     margin-top: 1rem;
     margin-left: 1.5rem;
     border-radius: .5em;
-    background: rgb(255, 127, 127);
+    background: #c57d56;
     color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: 1.5rem;
@@ -37,19 +37,61 @@ body{
 }
 
 #btn:hover{
-    background: rgb(252, 84, 84);
+    background: #8d4925;
+}
+
+.botao-do-card{
+    position: sticky;
+    margin-left: 14.9rem;
+    margin-top: 103rem;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .btn2{
-    background-color: rosybrown;
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;
-    border-radius: 32px;
-    border: 0;
-    cursor: pointer;
-    font-size: 80%;
-    font-weight: 500;
-    
+    display: block;
+    width: 300px;
+    height: 45px;
+    line-height: 40px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.btn2 span{
+    position: relative;
+    z-index: 2;
+}
+
+.btn2::after{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #c57d56;
+    transition: all .35s;
+}
+
+.btn2:hover{
+    color: #fff;
+}
+
+.btn2:hover::after{
+    width: 100%;
+}
+
+.para-saber-mais{
+    color: black;
 }
 
 header {
@@ -70,7 +112,11 @@ header h1{
 }
 
 span{
-    color: rosybrown;
+    color: #c57d56;
+}
+
+.span-coffe{
+    color: #8d4925;
 }
 
 a{  
@@ -81,7 +127,7 @@ a{
 
 a:hover{
     padding: .4rem;
-    background-color: rgb(226, 169, 169);
+    background-color: #8d4925;
     border-radius: 3px;
     color: #fff;
 }
@@ -112,7 +158,7 @@ nav{
 .mobile-menu div{
     width: 32px;
     height: 2px;
-    background: rgb(255, 157, 157);
+    background: #0d0d0d;
     margin: 8px;
     transition: .3s;
 }
@@ -167,9 +213,10 @@ nav{
 }
 
 #clt{
-    background: rgba(188, 143, 143, 0.61);
+    color: #131313;
     margin-top: 1.7rem;
     padding: 1.9rem;
+    font-size: 20px;
 }
 
 #clt p {
@@ -179,33 +226,197 @@ nav{
     font-weight: 700;
 }
 
-#card-geral{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-section.card{
+.container{
     display: flex;
-    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    margin-top: 58rem;
+    background: #0d0d0d;
+    box-shadow: rgba(0,0,0,0.3) 0px 19px 38px, rgba(0,0,0, 0.22) 0px 15px 12px;
+    gap: 1rem;
+    
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+
+.etapa-um{
+    width: 150px;
+    height: 143px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.text-plantio{
+    margin-top: 7px;
     text-align: center;
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    max-height: 256px;
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
 }
 
-section.card:first-child{
-    margin-left: 0;
+.desc-plantio{
+    color: white;
+    font-weight: 300;
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: justify;
+    text-align: center;
 }
 
-section.card .icon{
-    width: 500px;
-    height: 78px;
+
+
+.card-dois{
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    margin-top: 125rem;
+    background: #0d0d0d;
+    box-shadow: rgba(0,0,0,0.3) 0px 19px 38px, rgba(0,0,0, 0.22) 0px 15px 12px;
 }
 
-section.card img{
-    width: 100%;
+.etapa-dois{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
 }
+
+.text-classificacao{
+    margin-top: 7px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+}
+
+.desc-classificacao{
+    color: white;
+    font-weight: 300;
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: justify;
+    text-align: center;
+}
+
+.card-tres{
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    margin-top: 192rem;
+    background: #0d0d0d;
+    box-shadow: rgba(0,0,0,0.3) 0px 19px 38px, rgba(0,0,0, 0.22) 0px 15px 12px;
+}
+
+.etapa-tres{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.text-torrefacao{
+    margin-top: 7px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+}
+
+.desc-torrefacao{
+    color: white;
+    font-weight: 300;
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: justify;
+    text-align: center;
+}
+
+.card-geral{
+    background: #8d4925;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -245,7 +456,7 @@ section.card img{
         right: 0;
         width: 50vw;
         height: 92vh;
-        background: rgb(226, 169, 169);
+        background: #8d4925;
         flex-direction: column;
         justify-content: space-around;
         gap: 0;
