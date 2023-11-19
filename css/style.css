@@ -17,9 +17,9 @@ body{
 
 .bvd p{
     padding: .5rem;
-    background-color: #282827;
+    background-color: #0d0d0d;
     text-align: center;
-    color: white;
+    color: #fa5700;
     font-weight: bolder;
 } 
 
@@ -28,7 +28,7 @@ body{
     margin-top: 1rem;
     margin-left: 1.5rem;
     border-radius: .5em;
-    background: #c57d56;
+    background: #000000;
     color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: 1.5rem;
@@ -37,61 +37,11 @@ body{
 }
 
 #btn:hover{
-    background: #8d4925;
+    background: #fa5700;
 }
 
-.botao-do-card{
-    position: sticky;
-    margin-left: 14.9rem;
-    margin-top: 103rem;
-    align-items: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.btn2{
-    display: block;
-    width: 300px;
-    height: 45px;
-    line-height: 40px;
-    font-size: 16px;
-    text-decoration: none;
-    color: black;
-    border: 2px solid black;
-    border-radius: 5px;
-    letter-spacing: 2px;
-    text-align: center;
-    position: relative;
-    transition: all .35s;
-}
-
-.btn2 span{
-    position: relative;
-    z-index: 2;
-}
-
-.btn2::after{
-    position: absolute;
-    content: " ";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #c57d56;
-    transition: all .35s;
-}
-
-.btn2:hover{
-    color: #fff;
-}
-
-.btn2:hover::after{
-    width: 100%;
-}
-
-.para-saber-mais{
-    color: black;
+span.text-um-header{
+    color: #fa5700;
 }
 
 header {
@@ -108,15 +58,10 @@ header h1{
     font-family: 'Agbalumo', sans-serif;
     padding: 1rem;
     color: rgb(255, 255, 255);
-    text-shadow: 0px .8px 1px black;
-}
-
-span{
-    color: #c57d56;
 }
 
 .span-coffe{
-    color: #8d4925;
+    color: #fa5700;
 }
 
 a{  
@@ -214,9 +159,9 @@ nav{
 
 #clt{
     color: #131313;
-    margin-top: 1.7rem;
+    margin-top: 1.5rem;
     padding: 1.9rem;
-    font-size: 20px;
+    font-size: 1.7rem;
 }
 
 #clt p {
@@ -224,6 +169,10 @@ nav{
     justify-content: space-between;
     text-align: center;
     font-weight: 700;
+}
+
+.desc-header-pag{
+    color: #fa5700;
 }
 
 .container{
@@ -235,7 +184,7 @@ nav{
     width: 300px;
     height: 500px;
     border-radius: 15px;
-    margin-top: 58rem;
+    margin-top: 60rem;
     background: #0d0d0d;
     box-shadow: rgba(0,0,0,0.3) 0px 19px 38px, rgba(0,0,0, 0.22) 0px 15px 12px;
     gap: 1rem;
@@ -259,7 +208,7 @@ nav{
     text-align: center;
     font-weight: 600;
     font-size: 2rem;
-    color: white;
+    color: #fa5700;
 }
 
 .desc-plantio{
@@ -277,7 +226,7 @@ nav{
     width: 300px;
     height: 500px;
     border-radius: 15px;
-    margin-top: 125rem;
+    margin-top: 127rem;
     background: #0d0d0d;
     box-shadow: rgba(0,0,0,0.3) 0px 19px 38px, rgba(0,0,0, 0.22) 0px 15px 12px;
 }
@@ -294,7 +243,7 @@ nav{
     text-align: center;
     font-weight: 600;
     font-size: 2rem;
-    color: white;
+    color: #fa5700;
 }
 
 .desc-classificacao{
@@ -310,7 +259,7 @@ nav{
     width: 300px;
     height: 500px;
     border-radius: 15px;
-    margin-top: 192rem;
+    margin-top: 194rem;
     background: #0d0d0d;
     box-shadow: rgba(0,0,0,0.3) 0px 19px 38px, rgba(0,0,0, 0.22) 0px 15px 12px;
 }
@@ -327,7 +276,7 @@ nav{
     text-align: center;
     font-weight: 600;
     font-size: 2rem;
-    color: white;
+    color: #fa5700;
 }
 
 .desc-torrefacao{
@@ -339,30 +288,130 @@ nav{
     text-align: center;
 }
 
-.card-geral{
+.informacoes-um{
     background: #8d4925;
 }
 
+#produtos{
+    margin-top: 102rem;
+}
 
+#title-produtos{
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    color: #fa5700;
+    font-size: 2.2rem;
+    margin-bottom: 2.4rem;
+}
 
+.imagem-produto-um{
+    /* h*/
+}
 
+.container-produtos{
+    align-items: center;
+    justify-content: center;
+    margin-left: 6.2rem;
+    background-color: #282827;
+    width: 300px;
+    height: 280px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.3) 0px 19px 38px, rgba(0,0,0, 0.22) 0px 15px 12px;
+}
+.text-cafe-um h1{
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+} 
 
+.text-cafe-um p{
+    font-size: 16.5px;
+    color: white;
+}
 
+.preco-produtos{
+    margin-left: 6.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #fa5700;
+    font-weight: bold;
+}
 
+.comprar{
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+    margin-left: 39px;
+    display: block;
+    width: 220px;
+    height: 45px;
+    line-height: 40px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
 
+.comprar span{
+    position: relative;
+    z-index: 2;
+}
 
+.comprar::after{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fa5700;
+    transition: all .35s;
+}
 
+.comprar:hover{
+    color: #ffffff;
+}
 
+.comprar:hover::after{
+    width: 100%;
+}
 
+#historia-da-marca{
+    text-align: center;
+    margin-top: 5rem;
+    background: #131313;
+    width: 100vw;
+    height: 425px;
+}
 
+.text-main-um h1{
+    color: #fa5700;
+    font-size: 2.2rem;
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
+.text-main-um p{
+    color: white;
+    text-align: justify;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
 
-
-
-
-
-
-
+#produtos-dois{
+    margin-top: 2rem;
+}
 
 
 
